@@ -72,27 +72,38 @@ public class App
     //     System.out.println(dalisana);
 
     // }
+// {
+//     Scanner scanner = new Scanner(System.in);
+
+//     System.out.println("Give the first number: ");
+//     int value1 = Integer.valueOf(scanner.nextLine());
+
+//     System.out.println("Give the second number: ");
+//     int value2 = Integer.valueOf(scanner.nextLine());
+
+//     int sum = value1 + value2;
+//     System.out.println(value1 + "+" + value2 + "=" + sum);
+
+//     int min = value1 - value2;
+//     System.out.println(value1 + "-" + value2 + "=" + min);
+
+//     int reiz = value1 * value2;
+//     System.out.println(value1 + "*" + value2 + "=" + reiz);
+
+//     double div = (double) value1 / value2;
+//     System.out.println(value1 + "/" + value2 + "=" + div);
+
+// }
+
 {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Give the first number: ");
-    int value1 = Integer.valueOf(scanner.nextLine());
-
-    System.out.println("Give the second number: ");
-    int value2 = Integer.valueOf(scanner.nextLine());
-
-    int sum = value1 + value2;
-    System.out.println(value1 + "+" + value2 + "=" + sum);
-
-    int min = value1 - value2;
-    System.out.println(value1 + "-" + value2 + "=" + min);
-
-    int reiz = value1 * value2;
-    System.out.println(value1 + "*" + value2 + "=" + reiz);
-
-    double div = (double) value1 / value2;
-    System.out.println(value1 + "/" + value2 + "=" + div);
+    System.out.println("Give speed: ");
+    int speed = Integer.valueOf(scanner.nextLine());
+    
+    if (speed > 120) {
+        System.out.println("Speeding ticket!");
+    }
 
 }
-
 }

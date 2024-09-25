@@ -107,34 +107,77 @@ public class App
 
 // }
 
+// {
+//     Scanner scanner = new Scanner(System.in);
+//     System.out.println("Give points [0-100]:");
+//     int points = Integer.valueOf(scanner.nextLine());
+
+//     if (points < 0) {
+//         System.out.println("impossible!");
+//     }
+//     else if (points <= 49) {
+//         System.out.println("failed");
+//     }
+//     else if (points <= 59) {
+//         System.out.println("1");
+//     }
+//     else if (points <= 69) {
+//         System.out.println("2");
+//     }
+//     else if (points <= 79) {
+//         System.out.println("3");
+//     }
+//     else if (points <= 89) {
+//         System.out.println("4");
+//     }
+//     else if (points <= 100) {
+//         System.out.println("5");
+//     }
+//     else if (points > 100) {
+//         System.out.println("incredible!");
+//     }
+// }
+// {
+//     Scanner scanner = new Scanner(System.in);
+
+// System.out.println("Enter a string");
+// String input = scanner.nextLine();
+
+// if (input.equals("zigijs") || input.equals("Zigijs")) {
+//     System.out.println("Great! You read the instructions correctly.");
+// } else {
+//     System.out.println("Missed the mark!");
+// }
+// }
 {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Give points [0-100]:");
-    int points = Integer.valueOf(scanner.nextLine());
 
-    if (points < 0) {
-        System.out.println("impossible!");
-    }
-    else if (points <= 49) {
-        System.out.println("failed");
-    }
-    else if (points <= 59) {
-        System.out.println("1");
-    }
-    else if (points <= 69) {
-        System.out.println("2");
-    }
-    else if (points <= 79) {
-        System.out.println("3");
-    }
-    else if (points <= 89) {
-        System.out.println("4");
-    }
-    else if (points <= 100) {
-        System.out.println("5");
-    }
-    else if (points > 100) {
-        System.out.println("incredible!");
+    System.out.println("Value of the gift");
+
+    int value = Integer.valueOf(scanner.nextLine());
+
+    if (value < 5000) {
+        System.out.println("No tax!");
+    } 
+    
+    else if (5000 <= value && value <= 25000) {
+        System.out.println(100 + (value - 5000) * 0.08);
+    } 
+    
+    else if (25000 < value && value <= 55000) {
+        System.out.println(1700 + (value - 25000) * 0.1);
+    } 
+    
+    else if (55000 < value && value <= 200000) {
+        System.out.println(4700 + (value - 55000) * 0.12);
+    } 
+    
+    else if (200000 < value && value <= 1000000) {
+        System.out.println(4700 + (value - 200000) * 0.15);
+    } 
+    
+    else if(1000000 < value) {
+        System.out.println(142100 + (value - 1000000) * 0.17);
     }
 }
 }

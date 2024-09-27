@@ -149,35 +149,59 @@ public class App
 //     System.out.println("Missed the mark!");
 // }
 // }
+// {
+//     Scanner scanner = new Scanner(System.in);
+
+//     System.out.println("Value of the gift");
+
+//     int value = Integer.valueOf(scanner.nextLine());
+
+//     if (value < 5000) {
+//         System.out.println("No tax!");
+//     } 
+    
+//     else if (5000 <= value && value <= 25000) {
+//         System.out.println(100 + (value - 5000) * 0.08);
+//     } 
+    
+//     else if (25000 < value && value <= 55000) {
+//         System.out.println(1700 + (value - 25000) * 0.1);
+//     } 
+    
+//     else if (55000 < value && value <= 200000) {
+//         System.out.println(4700 + (value - 55000) * 0.12);
+//     } 
+    
+//     else if (200000 < value && value <= 1000000) {
+//         System.out.println(4700 + (value - 200000) * 0.15);
+//     } 
+    
+//     else if (1000000 < value) {
+//         System.out.println(142100 + (value - 1000000) * 0.17);
+//     }
+// }
+
 {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Value of the gift");
+    int amount = 0;
+    int sum = 0;
+    
+    while (true){
 
-    int value = Integer.valueOf(scanner.nextLine());
+    System.out.println("Give a number: ");
 
-    if (value < 5000) {
-        System.out.println("No tax!");
-    } 
-    
-    else if (5000 <= value && value <= 25000) {
-        System.out.println(100 + (value - 5000) * 0.08);
-    } 
-    
-    else if (25000 < value && value <= 55000) {
-        System.out.println(1700 + (value - 25000) * 0.1);
-    } 
-    
-    else if (55000 < value && value <= 200000) {
-        System.out.println(4700 + (value - 55000) * 0.12);
-    } 
-    
-    else if (200000 < value && value <= 1000000) {
-        System.out.println(4700 + (value - 200000) * 0.15);
-    } 
-    
-    else if(1000000 < value) {
-        System.out.println(142100 + (value - 1000000) * 0.17);
+    int num = Integer.valueOf(scanner.nextLine());
+
+    if (num == 0) {
+        break;
     }
+    else {
+        amount += 1;
+        sum = sum + num;
+    }
+    }
+    System.out.println("Number of numbers: " + amount);
+    System.out.println("Sum of the numbers: " + sum);
 }
 }

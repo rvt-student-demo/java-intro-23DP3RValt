@@ -205,42 +205,60 @@ public class App
 //     System.out.println("Number of numbers: " + amount);
 //     System.out.println("Sum of the numbers: " + sum);
 // }
+// {
+//     Scanner scanner = new Scanner(System.in);
+
+//     System.out.println("Give numbers: ");
+
+//     int sum = 0;
+//     int count = 0;
+//     double average = 0;
+//     int even = 0;
+//     int odd = 0;
+//     while (true) {
+//         int numbers = Integer.valueOf(scanner.nextLine());
+        
+//         if (numbers != -1) {
+//             sum = sum + numbers;
+//             count ++;
+//             if (numbers % 2 == 0) {
+//                 even++;
+//             }
+//             else {
+//                 odd++;
+//             }
+//             continue;
+//         }
+//         else {
+//             break;
+//         }
+//     }
+
+//     average = (double) sum / count;
+//     System.out.println("Thx! Bye!");
+//     System.out.println("Sum: " + sum);
+//     System.out.println("Numbers: " + count);
+//     System.out.println("Average: " + average);
+//     System.out.println("Even: " + even);
+//     System.out.println("Odd: " + odd);
+
+// }
 {
     Scanner scanner = new Scanner(System.in);
+    System.out.println("How many times?");
+    int reizes = 0;
+    reizes = Integer.valueOf(scanner.nextLine());
+    int num = 0;
 
-    System.out.println("Give numbers: ");
-
-    int sum = 0;
-    int count = 0;
-    double average = 0;
-    int even = 0;
-    int odd = 0;
-    while (true) {
-        int numbers = Integer.valueOf(scanner.nextLine());
-        
-        if (numbers != -1) {
-            sum = sum + numbers;
-            count ++;
-            if (numbers % 2 == 0) {
-                even++;
-            }
-            else {
-                odd++;
-            }
-            continue;
-        }
-        else {
-            break;
-        }
+    while (num < reizes) {
+        printText();
+        num++;
     }
+}
 
-    average = (double) sum / count;
-    System.out.println("Thx! Bye!");
-    System.out.println("Sum: " + sum);
-    System.out.println("Numbers: " + count);
-    System.out.println("Average: " + average);
-    System.out.println("Even: " + even);
-    System.out.println("Odd: " + odd);
 
+
+public static void printText() {
+    System.out.println("In a hole in the ground there lived a method");
 }
 }

@@ -4,12 +4,20 @@ import java.util.Scanner;
 
 public class App {
     public static void main( String[] args ) {
-    Scanner scanner = new Scanner(System.in);
-    
-    int start = Integer.valueOf(scanner.nextLine());
-    int end = Integer.valueOf(scanner.nextLine());
 
-    divisibleByThree(start, end);
+    Stars.printStars(5);
+    Stars.printStars(3);
+    Stars.printStars(9);
+
+    Stars.printSquare(4);
+
+    Stars.printRectangle(17, 3);
+
+    Stars.printTriangle(4);
+
+    Stars.printSpaces(3);
+
+    Stars.printRTriangle(5);
     }
 
 

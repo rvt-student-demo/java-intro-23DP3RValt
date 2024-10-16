@@ -18,6 +18,8 @@ public class App {
     Stars.printSpaces(3);
 
     Stars.printRTriangle(5);
+
+    Stars.printChristmasTree(5);
     }
 
 

@@ -43,5 +43,25 @@ public class  Stars {
         }
         System.out.println("");
     }
-    public static void printRTriangle(int size)
+    public static void printRTriangle(int sk) {
+
+        for (int i = 0; i < sk; i++) {
+            printSpaces(i);
+            for (int j = 0; j < sk; j++) {
+                System.out.print("*");
+            }
+
+        }
+
+    }
+    public static void printChristmasTree(int sk) {
+        for (int i = 1; i <= sk; i++) {
+            printSpaces(sk - 1);
+            printStars(2 * i -1);
+        }
+        for (int i = 0; i < 2; i++) {
+            printSpaces(sk -2);
+            printStars(3);
+        }
+    }
 }

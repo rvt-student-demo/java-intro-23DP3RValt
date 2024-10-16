@@ -1,25 +1,29 @@
 package lv.rvt;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
     public static void main( String[] args ) {
+        Scanner scanner = new Scanner(System.in);
 
-    Stars.printStars(5);
-    Stars.printStars(3);
-    Stars.printStars(9);
+        ArrayList<Integer> skaitlis = new ArrayList<>();
+        
+        int sum = 0;
+        while (true) {
+            int ievade = Integer.valueOf(scanner.nextLine());
 
-    Stars.printSquare(4);
+            if(ievade != 0) {
+                skaitlis.add(ievade);
+                sum = sum + ievade;
+            }
+            else {
+                break;
+            }
+        }
 
-    Stars.printRectangle(17, 3);
-
-    Stars.printTriangle(4);
-
-    Stars.printSpaces(3);
-
-    Stars.printRTriangle(5);
-
-    Stars.printChristmasTree(5);
+        System.err.println(skaitlis);
+        System.err.println(sum);
     }
 
 

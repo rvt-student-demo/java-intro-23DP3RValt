@@ -2,28 +2,16 @@ package lv.rvt;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Random;
 
 public class App {
     public static void main( String[] args ) {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> skaitlis = new ArrayList<>();
+
         
-        int sum = 0;
-        while (true) {
-            int ievade = Integer.valueOf(scanner.nextLine());
-
-            if(ievade != 0) {
-                skaitlis.add(ievade);
-                sum = sum + ievade;
-            }
-            else {
-                break;
-            }
-        }
-
-        System.err.println(skaitlis);
-        System.err.println(sum);
+        
     }
 
 
@@ -33,6 +21,26 @@ public static void divisibleByThree(int start, int end) {
             System.out.println(start);
         }
     start ++;
+    }
+}
+public static void printNumbersInRange(ArrayList<Integer> numbers, int lowerLimit, int upperLimit) {
+    for (int number: numbers) {
+        printNumbersInRange(numbers, 0, 5);
+    }
+}
+public static void bubbleSort(int a[]) {
+    int temp;
+    boolean swapped;
+
+    for (int i = 0; i < a.length; i++) {
+        for (int j = 0; j < a.length - 1; i++) {
+            if (a[j] > a[j + 1]){
+                temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                    swapped = true;
+            }
+        }
     }
 }
 }

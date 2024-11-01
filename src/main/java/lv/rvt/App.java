@@ -8,9 +8,33 @@ public class App {
     public static void main( String[] args ) {
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<Integer> skaitlis = new ArrayList<>();
+        ArrayList<String> vardi = new ArrayList<>();
+        ArrayList<Integer> gadi = new ArrayList<>();
 
+        String vards = " ";
         
+        while (vards != "") {
+            // String minVards = vardi[0];
+            System.out.println("Ievadi vārdu: ");
+            vards = scanner.nextLine();
+            vardi.add(vards);
+
+            int gads = Integer.valueOf(scanner.nextLine());
+            gadi.add(gads);
+        }
+        System.out.println(vardi);
+        System.out.println(gadi);
+
+        // while (true) {
+        //     vards = String.valueOf(scanner.nextLine());
+        //     gads = Integer.valueOf(scanner.nextLine());
+
+        //     String mvards = vards;
+
+        //     for (vards.length() < mvards.length(); mvards = vards) {
+
+        //     }
+        // }
         
     }
 

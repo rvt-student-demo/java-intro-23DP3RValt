@@ -6,65 +6,20 @@ import java.util.Random;
 
 public class App {
     public static void main( String[] args ) {
-        Scanner scanner = new Scanner(System.in);
+        Account artosAccount = new Account("Arto's account", 100.00);
+        Account artosSwissAccount = new Account("Arto's account in Switzerland", 1000000.00);
 
-        ArrayList<String> vardi = new ArrayList<>();
-        ArrayList<Integer> gadi = new ArrayList<>();
+        System.out.println("Initial state");
+        System.out.println(artosAccount);
+        System.out.println(artosSwissAccount);
 
-        String vards = " ";
-        
-        while (vards != "") {
-            // String minVards = vardi[0];
-            System.out.println("Ievadi vārdu: ");
-            vards = scanner.nextLine();
-            vardi.add(vards);
+        artosAccount.withdraw(20);
+        System.out.println("The balance of Arto's account is now: " + artosAccount.balance());
+        artosSwissAccount.deposit(200);
+        System.out.println("The balance of Arto's other account is now: " + artosSwissAccount.balance());
 
-            int gads = Integer.valueOf(scanner.nextLine());
-            gadi.add(gads);
-        }
-        System.out.println(vardi);
-        System.out.println(gadi);
-
-        // while (true) {
-        //     vards = String.valueOf(scanner.nextLine());
-        //     gads = Integer.valueOf(scanner.nextLine());
-
-        //     String mvards = vards;
-
-        //     for (vards.length() < mvards.length(); mvards = vards) {
-
-        //     }
-        // }
-        
+        System.out.println("End state");
+        System.out.println(artosAccount);
+        System.out.println(artosSwissAccount);
     }
-
-
-public static void divisibleByThree(int start, int end) {
-    while (start <= end) {
-        if(start % 3 == 0) {
-            System.out.println(start);
-        }
-    start ++;
-    }
-}
-public static void printNumbersInRange(ArrayList<Integer> numbers, int lowerLimit, int upperLimit) {
-    for (int number: numbers) {
-        printNumbersInRange(numbers, 0, 5);
-    }
-}
-public static void bubbleSort(int a[]) {
-    int temp;
-    boolean swapped;
-
-    for (int i = 0; i < a.length; i++) {
-        for (int j = 0; j < a.length - 1; i++) {
-            if (a[j] > a[j + 1]){
-                temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
-                    swapped = true;
-            }
-        }
-    }
-}
 }

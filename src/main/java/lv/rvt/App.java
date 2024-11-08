@@ -6,8 +6,25 @@ package lv.rvt;
 
 public class App {
     public static void main( String[] args ) {
-        Product bananna = new Product("Bananna", 14, 1.34);
+        DecreasingCounter counter = new DecreasingCounter(10);
 
-        bananna.printProduct();
+        counter.printValue();
+
+        counter.decrement1();
+        counter.printValue();
+
+        counter.decrement1();
+        counter.printValue();
+
+        counter.printValue();
+
+        counter.decrement2();
+        counter.printValue();
+
+        counter.decrement2();
+        counter.printValue();
+
+        counter.decrement2();
+        counter.printValue();
     }
 }

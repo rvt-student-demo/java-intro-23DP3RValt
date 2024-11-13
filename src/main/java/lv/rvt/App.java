@@ -6,25 +6,11 @@ package lv.rvt;
 
 public class App {
     public static void main( String[] args ) {
-        DecreasingCounter counter = new DecreasingCounter(10);
-
-        counter.printValue();
-
-        counter.decrement1();
-        counter.printValue();
-
-        counter.decrement1();
-        counter.printValue();
-
-        counter.printValue();
-
-        counter.decrement2();
-        counter.printValue();
-
-        counter.decrement2();
-        counter.printValue();
-
-        counter.decrement2();
-        counter.printValue();
+        Statistics statistics = new Statistics();
+        statistics.addNumber(3);
+        statistics.addNumber(5);
+        statistics.addNumber(1);
+        statistics.addNumber(2);
+        System.out.println("Count: " + statistics.getCount());
     }
 }

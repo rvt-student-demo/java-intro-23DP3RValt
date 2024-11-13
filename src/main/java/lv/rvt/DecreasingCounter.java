@@ -16,7 +16,7 @@ public class DecreasingCounter {
         System.out.println("value-1: " + this.value);
     }
 
-    public void decrement1() {
+    public void decrement2() {
         this.value = value - 1;
         System.out.println("value-1: " + this.value);
     }

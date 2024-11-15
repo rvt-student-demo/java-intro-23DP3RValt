@@ -13,10 +13,20 @@ public class PaymentCard {
     }
 
     public void eatAffordably() {
-        this.balance = 1.0 * this.balance - 2.60;
+        if (this.balance > 2.60) {
+            this.balance = 1.0 * this.balance - 2.60;
+        } else {
+            System.out.println("Not enough money!");
+        }
+        
     }
 
     public void eatHeartly() {
-        this.balance = 1.0 * this.balance - 4.60;
+        if (this.balance > 4.60) {
+            this.balance = 1.0 * this.balance - 4.60;
+        } else {
+            System.out.println("Not enough money!");
+        }
+        
     }
 }

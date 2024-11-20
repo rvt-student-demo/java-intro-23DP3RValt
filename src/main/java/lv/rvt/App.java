@@ -1,25 +1,26 @@
 package lv.rvt;
 
-// import java.util.ArrayList;
-// import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Scanner;
 // import java.util.Random;
 
 public class App {
     public static void main( String[] args ) {
-        PaymentCard card = new PaymentCard(10);
-        // Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in)
+        ArrayList<Books> books = new ArrayList<>();
 
-        System.out.println(card);
+        Books book1 = new Books("To Kill a Mockingbird", 281, 1960);
+        Books book2 = new Books("A Brief Hstory of Time", 256, 1988);
+        Books book3 = new Books("Beautiful Code", 593, 2007);
+        Books book4 = new Books("Teh Name of the Wind", 662, 2007);
 
-        card.addMoney(15);
-        System.out.println(card);
+        while (true) {
+            System.out.println("Title: ");
+            String title = String.valueOf(scanner.nextLine());
 
-        card.addMoney(10);
-        System.out.println(card);
-
-        card.addMoney(200);
-        System.out.println(card);
-
-        
+            if (title.isEmpty()) {
+                break;
+            }
+        }
     }
 }

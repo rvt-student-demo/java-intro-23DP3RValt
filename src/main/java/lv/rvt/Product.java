@@ -7,11 +7,20 @@ public class Product {
 
     public Product(String initialName, int initialQuantity, double initialPrice) {
         this.name = initialName;
+        this.quantity = initialQuantity;
         this.price = initialPrice;
+    }
+
+    public Product(String initialName, int initialQuantity) {
+        this.name = initialName;
         this.quantity = initialQuantity;
     }
 
-    public void printProduct() {
-        System.out.println(this.name + ", price " + this.price + ", " + this.quantity + " pcs");
+    public Product(String initialName) {
+        this.name = initialName;
+    }
+
+    public String toString() {
+        return this.name + ", price " + this.price + ", " + this.quantity + " pcs";
     }
 }

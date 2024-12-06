@@ -3,7 +3,7 @@ package lv.rvt;
 public class Person {
     private String name;
     private int age;
-    private int weight;
+    public int weight;
     private int height;
 
     public Person(String name) {

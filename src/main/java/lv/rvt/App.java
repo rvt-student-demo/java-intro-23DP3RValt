@@ -8,12 +8,13 @@ public class App {
     public static void main( String[] args ) {
         Scanner scanner = new Scanner(System.in);
         
-        Product tapeMeasure = new Product("Tape measure");
-        Product plaster = new Product("Plaster", 5);
-        Product tyre = new Product("Tyre", 5, 15.5);
+        HealthStation childrensHospital = new HealthStation();
 
-        System.out.println(tapeMeasure);
-        System.out.println(plaster);
-        System.out.println(tyre);
+        Person ethan = new Person("Ethan", 1, 110, 7);
+        Person peter = new Person("Peter", 33, 176, 85);
+
+        System.out.println(ethan.getName() + " weight: " + childrensHospital.weigh(ethan) + " kilos");
+        System.out.println(peter.getName() + " weight: " + childrensHospital.weigh(peter) + " kilos");
+        
     }
 }

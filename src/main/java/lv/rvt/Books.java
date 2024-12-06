@@ -14,7 +14,5 @@ public class Books {
 
     }
 
-    public Title() {
-        return title;
-    }
+    
 }

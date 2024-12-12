@@ -2,40 +2,31 @@ package lv.rvt;
 
 public class PaymentCard {
     private double balance;
+    
 
-    public PaymentCard(double openingBalance) {
-        this.balance = openingBalance;
-        System.out.println(this.balance);
+    public PaymentCard(double Balance) {
+        this.balance = Balance;
+    }
+    
+    public double balance() {
+        return this.balance;
     }
 
-    public String toString() {
-        return "The card has a balance of " + this.balance + " euros";
+    public void addMoney(double increase) {
+        this.balance = this.balance + increase;
     }
 
-    public void eatAffordably() {
-        if (this.balance > 2.60) {
-            this.balance = 1.0 * this.balance - 2.60;
+    public boolean takeMoney(double amount) {
+        if (amount < this.balance){
+            this.balance = this.balance - amount;
+            return true;
         } else {
-            System.out.println("Not enough money!");
+            return false;
         }
+
+        // implement the method so that it only takes money from the card if
+        // the balance is at least the amount parameter.
+        // returns true if successful and false otherwise
         
-    }
-
-    public void eatHeartly() {
-        if (this.balance > 4.60) {
-            this.balance = 1.0 * this.balance - 4.60;
-        } else {
-            System.out.println("Not enough money!");
-        }
-        
-    }
-    public void addMoney(double amount) {
-        if (amount + this.balance > 150) {
-            this.balance = 150;
-        } else if (amount < 0) {
-            this.balance = this.balance;
-        } else {
-            this.balance = amount + this.balance;
-        }
     }
 }

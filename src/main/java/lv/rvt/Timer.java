@@ -6,10 +6,6 @@ public class Timer {
     
 
     public void advance() {
-        ClockHand hou = new ClockHand(60)
-    }
-
-    public String toString() {
-        return
+        ClockHand hou = new ClockHand(60);
     }
 }
